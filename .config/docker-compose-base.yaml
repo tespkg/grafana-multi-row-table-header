@@ -1,7 +1,7 @@
 services:
   grafana:
     user: root
-    container_name: 'targetdigitalventures-multirowtableheader-panel'
+    container_name: 'grafana-multirowheader-table'
 
     build:
       context: .
@@ -13,13 +13,13 @@ services:
     ports:
       - 3000:3000/tcp
     volumes:
-      - ../dist:/var/lib/grafana/plugins/targetdigitalventures-multirowtableheader-panel
+      - ../dist:/var/lib/grafana/plugins/grafana-multirowheader-table
       - ../provisioning:/etc/grafana/provisioning
-      - ..:/root/targetdigitalventures-multirowtableheader-panel
+      - ..:/root/grafana-multirowheader-table
 
     environment:
       NODE_ENV: development
-      GF_LOG_FILTERS: plugin.targetdigitalventures-multirowtableheader-panel:debug
+      GF_LOG_FILTERS: plugin.grafana-multirowheader-table:debug
       GF_LOG_LEVEL: debug
       GF_DATAPROXY_LOGGING: 1
-      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: targetdigitalventures-multirowtableheader-panel
+      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: grafana-multirowheader-table

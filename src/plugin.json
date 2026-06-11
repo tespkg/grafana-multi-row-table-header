@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "Multi Row Table Header",
-  "id": "targetdigitalventures-multirowtableheader-panel",
+  "id": "grafana-multirowheader-table",
   "info": {
     "keywords": ["panel", "table", "header", "grouped", "two-row"],
     "description": "Simple table with a two-row (grouped) header, driven by a delimiter in each column name.",

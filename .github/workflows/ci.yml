@@ -202,7 +202,7 @@ jobs:
       - name: Docker logs
         if: ${{ always() && steps.run-tests.outcome == 'failure' }}
         run: |
-          docker logs targetdigitalventures-multirowtableheader-panel >& grafana-server.log
+          docker logs grafana-multirowheader-table >& grafana-server.log
 
       - name: Stop grafana docker
         run: docker compose down

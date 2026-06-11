@@ -51,7 +51,7 @@
         }
       ],
       "title": "History & Forecast",
-      "type": "targetdigitalventures-multirowtableheader-panel"
+      "type": "grafana-multirowheader-table"
     },
     {
       "datasource": {
@@ -82,7 +82,7 @@
         }
       ],
       "title": "No data example",
-      "type": "targetdigitalventures-multirowtableheader-panel"
+      "type": "grafana-multirowheader-table"
     }
   ],
   "refresh": "",
