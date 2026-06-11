@@ -1,0 +1,104 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "delimiter": "\\r",
+        "showRowNumbers": true,
+        "stickyHeader": true
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-testdata-datasource",
+            "uid": "db84e60d-b92a-4089-82cb-34842fb1754b"
+          },
+          "scenarioId": "raw_frame",
+          "rawFrameContent": "[{\"columns\": [{\"text\": \"company\", \"type\": \"string\"}, {\"text\": \"Hydrocarbon\", \"type\": \"string\"}, {\"text\": \"2015\\r1P\", \"type\": \"number\"}, {\"text\": \"2015\\r2P\", \"type\": \"number\"}, {\"text\": \"2016\\r1P\", \"type\": \"number\"}, {\"text\": \"2016\\r2P\", \"type\": \"number\"}, {\"text\": \"2017\\r1P\", \"type\": \"number\"}, {\"text\": \"2017\\r2P\", \"type\": \"number\"}, {\"text\": \"2018\\r1P\", \"type\": \"number\"}, {\"text\": \"2018\\r2P\", \"type\": \"number\"}], \"rows\": [[\"BP\", \"oil\", 0, 0, 0, 0, 0, 0, 0, 0], [\"BP\", \"condensate\", 79.26, 124.31, 158.52, 252.6, 278.23, 420.53, 671.08, 1290.96], [\"BP\", \"gas\", 3.65, 5.87, 7.29, 11.77, 13.24, 20.13, 24.33, 44.14]]}]"
+        }
+      ],
+      "title": "History & Forecast",
+      "type": "targetdigitalventures-multirowtableheader-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      },
+      "id": 2,
+      "options": {
+        "delimiter": "\\r",
+        "showRowNumbers": false,
+        "stickyHeader": true
+      },
+      "targets": [
+        {
+          "alias": "",
+          "datasource": {
+            "type": "grafana-testdata-datasource",
+            "uid": "db84e60d-b92a-4089-82cb-34842fb1754b"
+          },
+          "refId": "A",
+          "scenarioId": "no_data_points"
+        }
+      ],
+      "title": "No data example",
+      "type": "targetdigitalventures-multirowtableheader-panel"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 39,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Provisioned multi row table header dashboard",
+  "uid": "a538aeff-5a8a-42a5-901c-938d896fdd6f",
+  "version": 1,
+  "weekStart": ""
+}
